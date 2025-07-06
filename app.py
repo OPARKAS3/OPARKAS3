@@ -4,4 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Scalper Bot is Live!"
+    return "Scalper Bot is Live!!"
+
+if __name__ == "__main__":
+    app.run()
