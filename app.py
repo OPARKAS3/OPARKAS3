@@ -17,7 +17,8 @@ def signal():
     return {"status": "Signal sent"}, 200
 
 def send_telegram(message):
-    bot_token = "6171234567:AAEXAMPLE-TOKEN-HERE"   # 👈 Replace with your real token
+    bot_token = "7766665932:AAHRZxjMDDe_PjcA49IB_wroAcaJgxY1uPI"
+
     chat_id = "1274012617"
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     payload = {
