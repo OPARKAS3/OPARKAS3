@@ -1,5 +1,6 @@
 from flask import Flask, request
 import requests
+import os
 
 app = Flask(__name__)
 
@@ -17,8 +18,7 @@ def signal():
     return {"status": "Signal sent"}, 200
 
 def send_telegram(message):
-    bot_token = "7766665932:AAHRZxjMDDe_PjcA49IB_wroAcaJgxY1uPI"
-
+    bot_token = "7766665932:AAHRZxjMDDe_PjcA49IB_wroAcaJgxY1uPI"  # ✅ Replace with your token
     chat_id = "1274012617"
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     payload = {
@@ -31,9 +31,8 @@ def send_telegram(message):
         print("Telegram Error:", e)
 
 if __name__ == "__main__":
-    import os
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
 
-   
-  
+
+
