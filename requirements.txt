@@ -1,3 +1,6 @@
-flask
+fastapi
 requests
-gunicorn
+pandas
+ta
+yfinance
+uvicorn
